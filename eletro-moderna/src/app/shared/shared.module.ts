@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavComponent } from './components/nav/nav.component';
+import { HttpClientModule} from '@angular/common/http';
 
 //Materila biblioteca externa
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -34,7 +35,8 @@ import {MatCardModule} from '@angular/material/card';
     MatSidenavModule,
     RouterModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   exports:[
     MatToolbarModule,
@@ -45,8 +47,8 @@ import {MatCardModule} from '@angular/material/card';
     RouterModule,
     MatListModule,
     HomeComponent,
-    MatCardModule
-
+    MatCardModule,
+    HttpClientModule
     
     
   ]
