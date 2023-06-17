@@ -8,6 +8,11 @@ import { NavComponent } from './components/nav/nav.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
+import {MatListModule} from '@angular/material/list';
+import { HomeComponent } from './components/home/home.component';
+import {MatCardModule} from '@angular/material/card';
+
+
 
 
 
@@ -20,13 +25,16 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     FooterComponent,
     NavComponent,
+    HomeComponent,
     
   ],
   imports: [
     CommonModule,
     MatToolbarModule,
     MatSidenavModule,
-    RouterModule
+    RouterModule,
+    MatListModule,
+    MatCardModule
   ],
   exports:[
     MatToolbarModule,
@@ -34,7 +42,10 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     NavComponent,
     MatSidenavModule,
-    RouterModule
+    RouterModule,
+    MatListModule,
+    HomeComponent,
+    MatCardModule
 
     
     
