@@ -11,12 +11,12 @@ url='http://localhost:3000/clientes'
   
 constructor(private http:HttpClient) {}
 
-listar():Observable<Cliente>{
-   return this.http.get<Cliente>(this.url)
+listar():Observable<Cliente[]>{
+   return this.http.get<Cliente[]>(this.url)
 }
 
-listarPorId(id: number):Observable<Cliente[]>{
-  return this.http.get<Cliente[]>(`${this.url}/${id}`)
+listarPorId(id: number):Observable<Cliente>{
+  return this.http.get<Cliente>(`${this.url}/${id}`)
 }
 criar(Cliente : Cliente){
   return this.http.post<Cliente>(this.url,Cliente)

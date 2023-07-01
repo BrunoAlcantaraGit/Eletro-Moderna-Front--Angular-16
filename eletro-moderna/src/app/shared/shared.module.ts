@@ -12,6 +12,10 @@ import { RouterModule } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './components/home/home.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
+
+
 
 
 
@@ -36,7 +40,9 @@ import {MatCardModule} from '@angular/material/card';
     RouterModule,
     MatListModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatTableModule
   ],
   exports:[
     MatToolbarModule,
@@ -48,8 +54,9 @@ import {MatCardModule} from '@angular/material/card';
     MatListModule,
     HomeComponent,
     MatCardModule,
-    HttpClientModule
-    
+    HttpClientModule,
+    MatButtonModule,
+    MatTableModule
     
   ]
 
