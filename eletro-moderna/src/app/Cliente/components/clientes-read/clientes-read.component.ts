@@ -14,11 +14,11 @@ export class ClientesReadComponent implements OnInit {
     private clienteService: ClienteService
   ){}
   
-  displayedColumns: string[] = ['id', 'nome', 'email', 'dataNascimento'];
+  displayedColumns: string[] = ['id', 'nome', 'email', 'dataNascimento','acoes'];
   ngOnInit(): void {
     this.listar();
   }
-  
+
   listar(): void {
     this.clienteService.listar().subscribe( (sucesso)=>{
       console.log(sucesso)
@@ -27,4 +27,10 @@ export class ClientesReadComponent implements OnInit {
     
     )
   }
+  deletar(id:number):void{
+    this.clienteService.deletar(id).subscribe(()=> {
+      this.listar();
+    })
+  }
+
 }
