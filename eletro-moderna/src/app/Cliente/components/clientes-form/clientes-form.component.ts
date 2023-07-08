@@ -50,6 +50,11 @@ export class ClientesFormComponent  implements OnInit{
     })
 
 }
-onCancel(){}
-onSubmit(){}
+onSubmit(){
+  this.submit.emit(this.form.value)
+}
+onCancel(){
+  this.route.navigate(['/clientes'])
+}
+
 }
