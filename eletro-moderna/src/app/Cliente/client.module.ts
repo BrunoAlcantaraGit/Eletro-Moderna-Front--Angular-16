@@ -11,12 +11,12 @@ import { ClientesFormComponent } from './components/clientes-form/clientes-form.
 @NgModule({
   declarations: [
     
+  ClientesReadComponent,
+  ClienteCreateComponent,
+  ClienteUpdateComponent,
+  ClientesComponent,
+  ClientesFormComponent
   
-    ClientesReadComponent,
-             ClienteCreateComponent,
-             ClienteUpdateComponent,
-             ClientesComponent,
-             ClientesFormComponent
   ],
   imports: [
  CommonModule,

@@ -14,6 +14,9 @@ import { HomeComponent } from './components/home/home.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -42,7 +45,11 @@ import {MatTableModule} from '@angular/material/table';
     MatCardModule,
     HttpClientModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   exports:[
     MatToolbarModule,
@@ -56,7 +63,11 @@ import {MatTableModule} from '@angular/material/table';
     MatCardModule,
     HttpClientModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
     
   ]
 

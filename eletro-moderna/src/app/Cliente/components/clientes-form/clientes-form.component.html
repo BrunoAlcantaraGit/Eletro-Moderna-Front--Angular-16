@@ -1,55 +1,55 @@
-<form [formGroup] = 'form'>
+<form [formGroup]='form'>
     <div>
     <mat-form-field>
-        <input matInput placeholder="Nome"  formControlName = 'nome'>
+        <input matInput placeholder="Nome" formControlName='nome'>
     </mat-form-field>
     
     <mat-form-field>
-        <input matInput placeholder="Email"  formControlName = 'email'>
+        <input matInput placeholder="Email" formControlName='email'>
     </mat-form-field>
     
     <mat-form-field>
-        <input matInput placeholder="Documento"  formControlName = 'documento'>
+        <input matInput placeholder="Documento" formControlName='documento'>
     </mat-form-field>
     
     <mat-form-field>
-        <input matInput placeholder="Data de Nascimento"  formControlName = 'dataNascimento'>
+        <input matInput placeholder="Data de Nascimento" formControlName='dataNascimento'>
     </mat-form-field>
     </div>
     
-    <div formeGroupName="contato">
+    <div formGroupName="contato">
         <mat-form-field>
-            <input matInput placeholder="DDD"  formControlName = 'ddd'>
+            <input matInput placeholder="DDD" formControlName='ddd'>
         </mat-form-field>
         
         <mat-form-field>
-            <input matInput placeholder="Telefone"  formControlName = 'telefone'>
+            <input matInput placeholder="Telefone" formControlName='telefone'>
         </mat-form-field>
     </div>
     
-    <div formeGroupName="endereco">
+    <div formGroupName="endereco">
         <mat-form-field>
-            <input matInput placeholder="Rua"  formControlName = 'rua'>
+            <input matInput placeholder="Rua" formControlName='rua'>
         </mat-form-field>
         
         <mat-form-field>
-            <input matInput placeholder="Numero"  formControlName = 'numero'>
+            <input matInput placeholder="Numero" formControlName='numero'>
         </mat-form-field>
         
         <mat-form-field>
-            <input matInput placeholder="CEP"  formControlName = 'cep'>
+            <input matInput placeholder="CEP" formControlName='cep'>
         </mat-form-field>
         
         <mat-form-field>
-            <input matInput placeholder="Bairro"  formControlName = 'bairro'>
+            <input matInput placeholder="Bairro" formControlName='bairro'>
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Cidade"  formControlName = 'cidade'>
+            <input matInput placeholder="Cidade" formControlName='cidade'>
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="UF"  formControlName = 'uf'>
+            <input matInput placeholder="UF" formControlName='uf'>
         </mat-form-field>
     </div>
     
@@ -59,6 +59,6 @@
         {{btnText}}
     </button>
 
-    <button>
+    <button mat-raised-button color ='Warn' (click)="onCancel">
         cancelar
     </button>
