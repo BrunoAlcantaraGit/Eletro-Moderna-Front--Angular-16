@@ -11,6 +11,11 @@ export const CONFIG:NavData[] = [
     {
         routeURL:'/restaurantes',
         icon:'restaurant',
-        title:'Restaurante'
-    }
+        title:'Porduto'
+    },
+{
+       routeURL:'/restaurantes',
+        icon:'restaurant',
+        title:'Porduto'  
+}
 ]

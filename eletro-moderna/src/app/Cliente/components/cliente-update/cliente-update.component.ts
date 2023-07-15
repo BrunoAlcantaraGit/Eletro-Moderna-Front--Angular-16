@@ -26,11 +26,11 @@ this.btnEditar = "Atualizar"
   listarPorId(id:number): void{
     this.clienteService.listarPorId(id).subscribe(retorno =>{
     this.cliente = retorno
-    console.log(retorno)
+   
     })
   }
   atualizarCliente(cliente: Cliente){
-    this.clienteService.atualiar(this.id, cliente).subscribe(()=>{
+      this.clienteService.atualiar(this.id, cliente).subscribe(()=>{
       this.router.navigate(['/clientes']);
     })
   }
