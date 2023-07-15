@@ -16,7 +16,7 @@ const routes: Routes = [
     component: ClienteCreateComponent
 },
 {
-    path:'editar/id',
+    path:'editar/:id',
     component: ClienteUpdateComponent
 }
 ];
