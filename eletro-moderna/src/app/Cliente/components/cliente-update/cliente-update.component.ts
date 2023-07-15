@@ -29,5 +29,9 @@ this.btnEditar = "Atualizar"
     console.log(retorno)
     })
   }
-  atualizarCliente(cliente: Cliente){}
+  atualizarCliente(cliente: Cliente){
+    this.clienteService.atualiar(this.id, cliente).subscribe(()=>{
+      this.router.navigate(['/clientes']);
+    })
+  }
 }
